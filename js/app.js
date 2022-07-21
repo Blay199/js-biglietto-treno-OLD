@@ -8,11 +8,9 @@ if (age < 18) {
     trainTicket = trainTicket - trainTicket * 0.2;
 } else if (age > 65) {
     trainTicket = trainTicket - trainTicket * 0.4;
-} else {
-    trainTicket = trainTicket
 }
 
-document.getElementById("trip_cost").innerHTML = "Il prezzo del tuo biglietto è: " + trainTicket + " &euro";
+document.getElementById("trip_cost").innerHTML = "Il prezzo del tuo biglietto è: " + trainTicket + "€";
 
 
 
