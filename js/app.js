@@ -1,6 +1,5 @@
-const km = parseFloat( prompt('inserire chilometri da percorrere'))
-const age = parseFloat( prompt('Inserire età passeggero'))
-let trainTicket = km * 0.21;
+const km = parseFloat( prompt('inserire chilometri da percorrere'));
+const age = parseFloat( prompt('Inserire età passeggero'));
 
 
 
@@ -9,7 +8,7 @@ if (age < 18) {
 } else if (age > 65) {
     let trainTicket = trainTicket * 0.4;
 } else {
-    trainTicket = trainTicket;
+    let trainTicket = km * 0.21;    
 }
 
 document.getElementById("trip_cost").innerHTML = "Il prezzo del tuo biglietto è: " + trainTicket + " &euro";
